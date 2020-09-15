@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Extremely">
+    <meta name="author" content="Muhammad Alifudin Ashfa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a href="" class="navbar-brand" style="width: 195px;">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
+                            <span class="navbar-toggler-icon">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navi">
+                            <ul class="navbar-nav ml-left">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Catering</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Franchise</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Locations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Faq</a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline social-icons-header">
+                                <li class="list-inline-item">
+                                    <a href="">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="banner-inner">
+                    <h3>The Finest Ingredients For Taste Batter</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptatum natus ad explicabo libero non illum nulla
+                        perspiciatis quaerat maxime, minima dolorum, quidem iste
+                        mollitia nesciunt autem eum officiis veritatis suscipit.
+                    </p>
+                    <a href="#" class="btn-seemore">See More</a>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5 text-right">
+                <div class="banner-inneri">
+                    <h3>Modern Recipes Greatly Taste Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+                        reppelat quis minima, corrupti ratione, sapiente deleniti
+                        quisquam ex distinctio beatae quae recusandae, assumenda,
+                        atque voluptatum rerum molestiae? Perspiciatis, neque, ipsa.
+                    </p>
+                    <a href="#" class="btn-seemoree">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="bg"></div>
+    </div>
+
+    <div class="box-main-wrapper">
+        <div id="1b" class="bgcolor-1">
+            <div class="box">
+                <img class="left" src="./img/pizza.png" alt="">
+            </div>
+        </div>
+        <div id="2b" class="bgcolor-2">
+            <div class="box">
+                <img class="right" src="./img/pizza-right.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#1b').hover(function () {
+                $('#2b').addClass('blur');
+            }, function () {
+                $('#2b').removeClass('blur');
+            });
+            $('#2b').hover(function () {
+                $('#1b').addClass('blur');
+            }, function () {
+                $('#1b').removeClass('blur');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
